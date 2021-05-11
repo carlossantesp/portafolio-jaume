@@ -51,6 +51,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+.image-logo {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   body {
     background: var(--gradient-md);

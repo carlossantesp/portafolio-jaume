@@ -20,10 +20,17 @@
     <header class="header">
       <div class="wrapper">
         <div class="header-content">
-          <img src="./images/logo.png" alt="Logo" width="70" height="20" />
+          <img
+            class="image-logo"
+            src="./images/logo.png"
+            alt="Logo"
+            width="70"
+            height="20"
+            onclick="onTopHandler()"
+          />
           <nav class="menu" aria-label="main-navigation">
             <ul>
-              <li><a class="is-active" href="#main">Hola</a></li>
+              <li><a href="#main">Hola</a></li>
               <li><a href="#project">Proyectos</a></li>
               <li><a href="#contact">Hablemos</a></li>
             </ul>
@@ -241,7 +248,14 @@
 
       <footer class="footer">
         <div class="footer-logo">
-          <img src="./images/logo-alt.png" alt="Logo" width="70" height="20" />
+          <img
+            class="image-logo"
+            src="./images/logo-alt.png"
+            alt="Logo"
+            width="70"
+            height="20"
+            onclick="onTopHandler()"
+          />
         </div>
         <div class="social">
           <a href="tel:123456789" class="button-icon"
@@ -263,5 +277,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
