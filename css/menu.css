@@ -11,7 +11,9 @@
   color: var(--white);
   font: var(--button);
   text-transform: uppercase;
+  transition: color 0.25s ease;
 }
+.menu ul a:hover,
 .menu ul a.is-active {
   color: var(--purple);
 }
