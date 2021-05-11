@@ -1,0 +1,5 @@
+.hero-social {
+  padding-block-end: 24px;
+  display: flex;
+  gap: 16px;
+}

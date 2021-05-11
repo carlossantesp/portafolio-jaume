@@ -20,7 +20,7 @@
     <div class="wrapper">
       <header class="header">
         <img src="./images/logo.png" alt="Logo" width="70" height="20" />
-        <nav class="menu">
+        <nav class="menu" aria-label="main-navigation">
           <ul>
             <li><a class="is-active" href="#main">Hola</a></li>
             <li><a href="#project">Proyectos</a></li>
@@ -29,7 +29,7 @@
         </nav>
         <button class="button">Curriculum</button>
       </header>
-      <section class="hero" id="main">
+      <section aria-label="main" class="hero" id="main">
         <div class="hero-image">
           <img src="./images/jaume.png" alt="Jaume" width="338" height="339" />
         </div>
@@ -42,7 +42,7 @@
             Frontend Developer que le encanta implementar diseños que inspiran y
             atraen a las personas.
           </p>
-          <div class="hero-social">
+          <div class="social">
             <a href="tel:123456789" class="button-icon"
               ><img src="./icons/icon-phone.svg" alt="icon phone"
             /></a>
@@ -72,7 +72,7 @@
           alt="icon down"
         />
       </section>
-      <section id="projects" class="projects">
+      <section arial-label="projects" id="projects" class="projects">
         <article class="projects-item">
           <div class="project">
             <!-- component project here -->
@@ -197,6 +197,30 @@
           </div>
         </article>
       </section>
+
+      <footer class="footer">
+        <div class="footer-logo">
+          <img src="./images/logo-alt.png" alt="Logo" width="70" height="20" />
+        </div>
+        <div class="social">
+          <a href="tel:123456789" class="button-icon"
+            ><img src="./icons/icon-phone.svg" alt="icon phone"
+          /></a>
+          <a href="mailto:jaume@gmail.com" class="button-icon"
+            ><img src="./icons/icon-important_mail.svg" alt="icon email"
+          /></a>
+          <a href="https://instagram.com/@jaume" class="button-icon"
+            ><img src="./icons/icon-instagram.svg" alt="icon instagram"
+          /></a>
+          <a href="https://twitter.com/@jaume" class="button-icon"
+            ><img src="./icons/icon-twitter_squared.svg" alt="icon twitter"
+          /></a>
+        </div>
+        <div class="footer-copy">
+          <p>Hecho con ❤ por Jaume.</p>
+          <p>Copyright 2021 - Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
