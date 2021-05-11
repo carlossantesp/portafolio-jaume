@@ -5,15 +5,20 @@
 @import "./wrapper.css";
 @import "./menu.css";
 @import "./information.css";
+@import "./testimonial.css";
 
 :root {
   --fontBase: "Poppins", sans-serif;
+  --fontSecondary: "Oxygen", sans-serif;
   --headLine1: bold 95px / 153.71px var(--fontBase);
   --headLine2: bold 59px / 95px var(--fontBase);
   --headLine3: bold 48px / 77px var(--fontBase);
   --headLine4: bold 34px / 55px var(--fontBase);
+  --headLine4Light: 300 34px / 55.01px var(--fontSecondary);
+  --headLine4Secondary: bold 34px / 55.01px var(--fontSecondary);
   --headLine5: bold 24px / 38px var(--fontBase);
   --body1: 16px / 25px var(--fontBase);
+  --body1Secondary: bold 16px / 25px var(--fontSecondary);
   --body2: 14px / 22px var(--fontBase);
   --button: bold 14px / 22px var(--fontBase);
   --caption: 12px / 19px var(--fontBase);
