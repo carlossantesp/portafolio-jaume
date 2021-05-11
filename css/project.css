@@ -7,18 +7,7 @@
   flex-direction: column;
   gap: 16px;
 }
-.project-title {
-  text-decoration: none;
-  font: var(--headLine5);
-  align-self: flex-start;
-  color: var(--white);
-  background-color: var(--purple);
-  box-shadow: -4px 4px 0 var(--white);
-  padding-block-start: 4px;
-  padding-block-end: 4px;
-  padding-inline-start: 8px;
-  padding-inline-end: 8px;
-}
+
 .project-image img {
   max-inline-size: 100%;
 }
@@ -53,10 +42,5 @@
   }
   .projects-item:nth-child(odd) .project .project-image {
     order: 2;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .project-title {
-    font: var(--headLine4);
   }
 }

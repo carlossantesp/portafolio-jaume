@@ -29,7 +29,6 @@
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    padding-block-start: 40px;
     padding-block-end: 40px;
   }
   .footer-copy {
