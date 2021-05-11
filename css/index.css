@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./wrapper.css";
+@import "./menu.css";
 
 :root {
   --fontBase: "Poppins", sans-serif;
@@ -21,6 +22,12 @@
       rgba(255, 255, 255, 0) 100%
     ),
     linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
+  --gradient-md: radial-gradient(
+      41.48% 11.48% at 2.38% 8.52%,
+      #747de9 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
   --purple: #310a90;
   --green: #42e2b8;
   --white: #ffffff;
@@ -30,4 +37,9 @@ body {
   min-block-size: 100vh;
   font: var(--body1);
   color: var(--purple);
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: var(--gradient-md);
+  }
 }
