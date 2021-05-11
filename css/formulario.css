@@ -19,7 +19,6 @@
 }
 .form p {
   color: var(--white);
-  text-align: center;
 }
 .form input,
 .form textarea {
@@ -31,6 +30,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .form p {
+    text-align: center;
+  }
   .form .title {
     align-self: stretch;
     text-align: center;

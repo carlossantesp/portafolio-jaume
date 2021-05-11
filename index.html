@@ -17,18 +17,22 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <img src="./images/logo.png" alt="Logo" width="70" height="20" />
+          <nav class="menu" aria-label="main-navigation">
+            <ul>
+              <li><a class="is-active" href="#main">Hola</a></li>
+              <li><a href="#project">Proyectos</a></li>
+              <li><a href="#contact">Hablemos</a></li>
+            </ul>
+          </nav>
+          <button class="button">Curriculum</button>
+        </div>
+      </div>
+    </header>
     <div class="wrapper">
-      <header class="header">
-        <img src="./images/logo.png" alt="Logo" width="70" height="20" />
-        <nav class="menu" aria-label="main-navigation">
-          <ul>
-            <li><a class="is-active" href="#main">Hola</a></li>
-            <li><a href="#project">Proyectos</a></li>
-            <li><a href="#contact">Hablemos</a></li>
-          </ul>
-        </nav>
-        <button class="button">Curriculum</button>
-      </header>
       <section aria-label="main" class="hero" id="main">
         <div class="hero-image">
           <img src="./images/jaume.png" alt="Jaume" width="338" height="339" />
@@ -72,10 +76,9 @@
           alt="icon down"
         />
       </section>
-      <section arial-label="projects" id="projects" class="projects">
+      <section id="project" class="projects">
         <article class="projects-item">
           <div class="project">
-            <!-- component project here -->
             <div class="project-image">
               <img
                 src="./images/proyectos/leonidas-esteban.png"
@@ -121,7 +124,6 @@
         </article>
         <article class="projects-item">
           <div class="project">
-            <!-- component project here -->
             <div class="project-image">
               <img src="./images/proyectos/marvol.png" alt="Marvol image" />
             </div>
@@ -160,7 +162,6 @@
         </article>
         <article class="projects-item">
           <div class="project">
-            <!-- component project here -->
             <div class="project-image">
               <img src="./images/proyectos/netnet.png" alt="Leonidas Esteban" />
             </div>
@@ -197,7 +198,7 @@
           </div>
         </article>
       </section>
-      <form action="" method="POST" class="form">
+      <form action="" method="POST" class="form" id="contact">
         <h2 class="title">HABLEMOS</h2>
         <p>
           Si está interesado en trabajar conmigo en su próximo proyecto, no dude
