@@ -46,16 +46,25 @@
   --white: #ffffff;
   --white-hover: #e9e9e9;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   background: var(--gradient);
   min-block-size: 100vh;
   font: var(--body1);
   color: var(--purple);
   margin: 0;
-  box-sizing: border-box;
 }
-.image-logo {
+.link-logo {
   cursor: pointer;
+  line-height: 0;
+}
+.link-logo img {
+  display: block;
+}
+.link-logo:focus {
+  outline: 1px solid var(--purple-hover);
 }
 @media screen and (min-width: 768px) {
   body {

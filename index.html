@@ -17,20 +17,20 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="header">
+    <header aria-label="header" class="header">
       <div class="wrapper">
         <div class="header-content">
-          <img
-            class="image-logo"
-            src="./images/logo.png"
-            alt="Logo"
-            width="70"
-            height="20"
-            onclick="onTopHandler()"
-          />
+          <a tabindex="0" onclick="onTopHandler()" class="link-logo">
+            <img
+              src="./images/logo.png"
+              alt="Logo de Jaume"
+              width="86"
+              height="18"
+            />
+          </a>
           <nav class="menu" aria-label="main-navigation">
             <ul>
-              <li><a href="#main">Hola</a></li>
+              <li><a class="is-active" href="#main">Hola</a></li>
               <li><a href="#project">Proyectos</a></li>
               <li><a href="#contact">Hablemos</a></li>
             </ul>
@@ -55,22 +55,29 @@
           </p>
           <div class="social">
             <a href="tel:123456789" class="button-icon"
-              ><img src="./icons/icon-phone.svg" alt="icon phone"
+              ><img src="./icons/icon-phone.svg" alt="Icon phone"
             /></a>
             <a href="mailto:jaume@gmail.com" class="button-icon"
-              ><img src="./icons/icon-important_mail.svg" alt="icon email"
+              ><img src="./icons/icon-important_mail.svg" alt="Icon email"
             /></a>
             <a href="https://instagram.com/@jaume" class="button-icon"
-              ><img src="./icons/icon-instagram.svg" alt="icon instagram"
+              ><img src="./icons/icon-instagram.svg" alt="Icon instagram"
             /></a>
             <a href="https://twitter.com/@jaume" class="button-icon"
-              ><img src="./icons/icon-twitter_squared.svg" alt="icon twitter"
+              ><img src="./icons/icon-twitter_squared.svg" alt="Icon twitter"
             /></a>
           </div>
-          <a href="#" class="button">Descargar Curriculum</a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com"
+            class="button"
+            >Descargar Curriculum</a
+          >
         </div>
       </section>
-      <section class="information">
+      <section aria-label="information" class="information">
         <p>
           A lo largo de mi carrera como Frontend, he tenido el privilegio de
           trabajar en proyectos retadores e increíbles
@@ -80,20 +87,24 @@
           width="80"
           height="80"
           src="./icons/arrow-down.svg"
-          alt="icon down"
+          alt="Icon arrow down"
         />
       </section>
-      <section id="project" class="projects">
-        <article class="projects-item">
+      <section aria-label="projects" id="project" class="projects">
+        <article aria-label="project-item" class="projects-item">
           <div class="project">
             <div class="project-image">
               <img
                 src="./images/proyectos/leonidas-esteban.png"
-                alt="Leonidas Esteban"
+                alt="Imagen de proyecto leonidasesteban.com"
               />
             </div>
             <div class="project-description">
-              <a class="title" href="https://leonidasesteban.com"
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://leonidasesteban.com"
+                class="title"
                 >leonidasesteban.com</a
               >
               <p>
@@ -101,10 +112,20 @@
                 habilidades como desarrollador Front-End.
               </p>
               <div class="project-buttons">
-                <a target="_blank" href="#" class="button is-secondary"
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com"
+                  class="button is-secondary"
                   >Ver Código</a
                 >
-                <a target="_blank" href="#" class="button">Ver Projecto</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://leonidasesteban.com"
+                  class="button"
+                  >Ver Projecto</a
+                >
               </div>
             </div>
           </div>
@@ -112,7 +133,7 @@
             <div class="testimonial-image">
               <img
                 src="./images/testimonios/user1.png"
-                alt="Usuario 1"
+                alt="Imagen de usuario 1"
                 width="64"
                 height="64"
               />
@@ -132,20 +153,39 @@
         <article class="projects-item">
           <div class="project">
             <div class="project-image">
-              <img src="./images/proyectos/marvol.png" alt="Marvol image" />
+              <img
+                src="./images/proyectos/marvol.png"
+                alt="Imagen de proyecto Marvol"
+              />
             </div>
             <div class="project-description">
-              <a class="title" href="#">MARVOL</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://marvel.com"
+                class="title"
+                >MARVOL</a
+              >
               <p>
                 Es el sitio oficial de Marvol Entertainment. Explore películas,
                 personajes, cómics, programas de televisión, videos y más
                 oficiales de Marvol.
               </p>
               <div class="project-buttons">
-                <a target="_blank" href="#" class="button is-secondary"
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com"
+                  class="button is-secondary"
                   >Ver Código</a
                 >
-                <a target="_blank" href="#" class="button">Ver Projecto</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://marvel.com"
+                  class="button"
+                  >Ver Projecto</a
+                >
               </div>
             </div>
           </div>
@@ -153,7 +193,7 @@
             <div class="testimonial-image">
               <img
                 src="./images/testimonios/user2.png"
-                alt="Usuario 1"
+                alt="Imagen de usuario 2"
                 width="64"
                 height="64"
               />
@@ -170,19 +210,38 @@
         <article class="projects-item">
           <div class="project">
             <div class="project-image">
-              <img src="./images/proyectos/netnet.png" alt="Leonidas Esteban" />
+              <img
+                src="./images/proyectos/netnet.png"
+                alt="Imagen de proyecto Netnet"
+              />
             </div>
             <div class="project-description">
-              <a class="title" href="#">NETNET</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://netflix.com"
+                class="title"
+                >NETNET</a
+              >
               <p>
                 Películas y series ilimitadas y mucho más. Disfruta donde
                 quieras. Cancela cuando quieras.
               </p>
               <div class="project-buttons">
-                <a target="_blank" href="#" class="button is-secondary"
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com"
+                  class="button is-secondary"
                   >Ver Código</a
                 >
-                <a target="_blank" href="#" class="button">Ver Projecto</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="netflix.com"
+                  class="button"
+                  >Ver Projecto</a
+                >
               </div>
             </div>
           </div>
@@ -190,7 +249,7 @@
             <div class="testimonial-image">
               <img
                 src="./images/testimonios/user3.png"
-                alt="Usuario 1"
+                alt="Imagen de usuario 3"
                 width="64"
                 height="64"
               />
@@ -205,7 +264,7 @@
           </div>
         </article>
       </section>
-      <form action="" method="POST" class="form" id="contact">
+      <form aria-label="form" action="" method="POST" class="form" id="contact">
         <h2 class="title">HABLEMOS</h2>
         <p>
           Si está interesado en trabajar conmigo en su próximo proyecto, no dude
@@ -246,18 +305,18 @@
         <button class="button" type="submit">ENVIAR MENSAJE</button>
       </form>
 
-      <footer class="footer">
+      <footer aria-label="footer" class="footer">
         <div class="footer-logo">
-          <img
-            class="image-logo"
-            src="./images/logo-alt.png"
-            alt="Logo"
-            width="70"
-            height="20"
-            onclick="onTopHandler()"
-          />
+          <a tabindex="0" onclick="onTopHandler()" class="link-logo">
+            <img
+              src="./images/logo-alt.png"
+              alt="Logo"
+              width="86"
+              height="18"
+            />
+          </a>
         </div>
-        <div class="social">
+        <div role="navigation" aria-label="social-navigation" class="social">
           <a href="tel:123456789" class="button-icon"
             ><img src="./icons/icon-phone.svg" alt="icon phone"
           /></a>
